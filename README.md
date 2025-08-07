@@ -70,8 +70,8 @@ nft-service/
 │   │   │   ├── listing.routes.js
 │   │   │   └── index.routes.js
 │   │   └── 📁 validators/
-│   │       ├── nft.validator.js
-│   │       └── listing.validator.js
+│   │   │   ├── nft.validator.js
+│   │   │   └── listing.validator.js
 │   ├── 📁 services/
 │   │   ├── 📁 blockchain/
 │   │   │   ├── eventListener.service.js
@@ -97,9 +97,9 @@ nft-service/
 │   │   │   ├── searchIndexer.service.js
 │   │   │   └── queryBuilder.service.js
 │   │   └── 📁 cache/
-│   │       ├── redis.service.js
-│   │       ├── cacheManager.service.js
-│   │       └── sessionManager.service.js
+│   │   │   ├── redis.service.js
+│   │   │   ├── cacheManager.service.js
+│   │   │   └── sessionManager.service.js
 │   ├── 📁 models/
 │   │   ├── collection.model.js
 │   │   ├── nft.model.js
@@ -170,8 +170,8 @@ nft-service/
 │   │   │   ├── nft.controller.test.js
 │   │   │   └── collection.controller.test.js
 │   │   └── 📁 utils/
-│   │       ├── logger.test.js
-│   │       └── helpers.test.js
+│   │   │   ├── logger.test.js
+│   │   │   └── helpers.test.js
 │   ├── 📁 integration/
 │   │   ├── api.integration.test.js
 │   │   ├── blockchain.integration.test.js
@@ -218,15 +218,15 @@ nft-service/
 │   │   │   ├── kustomization.yaml
 │   │   │   └── patches.yaml
 │   │   └── 📁 production/
-│   │       ├── kustomization.yaml
-│   │       └── patches.yaml
+│   │   │   ├── kustomization.yaml
+│   │   │   └── patches.yaml
 │   └── namespace.yaml
 ├── 📁 monitoring/
 │   ├── prometheus.yml
 │   ├── grafana/
 │   │   └── dashboards/
-│   │       ├── nft-service-metrics.json
-│   │       └── blockchain-sync.json
+│   │   │   ├── nft-service-metrics.json
+│   │   │   └── blockchain-sync.json
 │   └── alerts.yml
 ├── 📁 .github/
 │   ├── 📁 workflows/
@@ -251,6 +251,28 @@ nft-service/
 ├── CHANGELOG.md
 └── README.md
 ```
+
+## 📚 Documentation Structure
+
+Each major directory in the project contains its own README.md file with specific documentation:
+
+- `src/README.md` - Source code overview
+- `tests/README.md` - Testing framework documentation
+- `docs/README.md` - Documentation overview
+- `scripts/README.md` - Utility scripts documentation
+- `docker/README.md` - Docker configuration documentation
+- `k8s/README.md` - Kubernetes deployment documentation
+- `monitoring/README.md` - Monitoring and observability documentation
+- `.github/README.md` - GitHub-specific documentation
+- `src/api/README.md` - API layer documentation
+- `src/services/README.md` - Services layer documentation
+- `src/database/README.md` - Database documentation
+- `src/graphql/README.md` - GraphQL documentation
+- `src/jobs/README.md` - Background jobs documentation
+- `src/utils/README.md` - Utility functions documentation
+- `src/config/README.md` - Configuration documentation
+- `tests/unit/README.md` - Unit testing documentation
+- `tests/integration/README.md` - Integration testing documentation
 
 ## 🛠️ Installation
 
